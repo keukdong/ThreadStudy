@@ -6,5 +6,5 @@ int main(void)
 	CTestThread* pThread = CThreadManager::GetInst()->CreateThread<CTestThread>("TestThread");
 	pThread->Start();
  	CThreadManager::DestroyInst();
-  return 0;
+  	return 0;
 }
