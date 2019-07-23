@@ -3,18 +3,10 @@
 class CTestThread :
 	public CThread
 {
-	// ºÎ¸ğÀÇ Ä£±¸´Â ³» Ä£±¸°¡ ¾Æ´Ï´Ù.
+	// ë¶€ëª¨ì˜ ì¹œêµ¬ëŠ” ë‚´ ì¹œêµ¬ê°€ ì•„ë‹ˆë‹¤.
 	friend class CThreadManager;
 
-	// ºÎ¸ğÀÇ »ı¼ºÀÚ°¡ privateÀÌ°í ÀÚ½ÄÀÇ »ı¼ºÀÚ´Â ¾î¶»°Ô µÉ±î?
-	// ¼Ò¸êÀÚ¸¦ Á¤ÀÇÇÏÁö ¾ÊÀºÃ¤·Î, ½º·¹µå ¸Å´ÏÀú·Î create<CTestThread>¸¦ ½ÇÇàÇÏ·Á°íÇÏ¸é
-	// ÄÄÆÄÀÏ·¯¿¡¼­ CTestThread ¼Ò¸êÀÚ°¡ ¾Ï½ÃÀûÀ¸·Î »èÁ¦µÇ¾ú´Ù°í ¸»ÇØÁØ´Ù. 
-	// ¶ÇÇÑ »ı¼ºÀÚµµ »èÁ¦µÈ ÇÔ¼ö¶ó°í ³ª¿Â´Ù.
-//private:
-//	CTestThread() { ; }
-//	~CTestThread() { ; }
-
 public:
-	virtual void Run();
+	virtual void Run() override;
 };
 
